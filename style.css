@@ -1,13 +1,45 @@
 body {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    flex-direction: column;
 }
 
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: orange;
+.timeline {
+    .green,
+    .purple,
+    .orange,
+    .blue {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .green {
+        background-color: green;
+    }
+    .purple {
+        background-color: purple;
+    }
+    .orange {
+        background-color: orange;
+    }
+    .blue {
+        background-color: #004272;
+    }
+}
+
+.to {
+    .blue1 {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .blue1 {
+        background-color: #1960ae;
+    }
 }
