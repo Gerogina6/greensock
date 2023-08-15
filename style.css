@@ -33,7 +33,9 @@ body {
 }
 
 .to {
-    .blue1 {
+    .blue1,
+    .blue2,
+    .blue3 {
         width: 100px;
         height: 100px;
         margin: 10px;
@@ -41,5 +43,11 @@ body {
     }
     .blue1 {
         background-color: #1960ae;
+    }
+    .blue2 {
+        background-color: #94bfd8;
+    }
+    .blue3 {
+        background-color: #025291;        ;
     }
 }

@@ -21,6 +21,18 @@ tl.to('.orange', { x:600, scale: 2, y: 20}, "+=1")
 tl.to('.blue', { rotation: 360 })
 
 // to
-let tween = gsap.to('.blue1', { duration: 1, x: 100})
-tween.resume();
-tween.seek(0.5);
+let tween = gsap.to('.blue1', { 
+    duration: 1, 
+    x: -100, 
+    rotation: 360, 
+    ease: "power1.inOut",
+    stagger: {
+        amount: 1.5, 
+        grid: "auto",
+        from: "center"
+    }
+})
+// tween.resume();
+// tween.seek(0.5);
+let from = gsap.from('.blue2', {x: 200 })
+let fromTo = gsap.fromTo('.blue3', {x: -40 }, {x: 40});
